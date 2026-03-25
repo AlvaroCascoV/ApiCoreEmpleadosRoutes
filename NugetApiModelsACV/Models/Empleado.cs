@@ -1,7 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text;
 
-namespace ApiCoreEmpleadosRoutes.Models
+namespace NugetApiModelsACV.Models
 {
     [Table("EMP")]
     public class Empleado
