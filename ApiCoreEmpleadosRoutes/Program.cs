@@ -25,6 +25,13 @@ app.MapOpenApi();
 app.MapScalarApiReference();
 
 app.MapGet("/", () => Results.Redirect("/scalar"));
+//tambien
+/*
+ app.MapGet("/", context =>  {
+     context.Response.Redirect("/scalar");
+     return Task.CompletedTask;
+ })
+ */
 
 app.UseHttpsRedirection();
 
