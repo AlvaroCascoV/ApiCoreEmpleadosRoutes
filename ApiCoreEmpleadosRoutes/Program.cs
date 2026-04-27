@@ -6,7 +6,7 @@ using Scalar.AspNetCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-string connectionString = builder.Configuration.GetConnectionString("AZURETAJAMAR");
+string connectionString = builder.Configuration.GetConnectionString("SqlAzure");
 builder.Services.AddTransient<RepositoryEmpleados>();
 builder.Services.AddDbContext<EmpleadosContext>(options => options.UseSqlServer(connectionString));
 
